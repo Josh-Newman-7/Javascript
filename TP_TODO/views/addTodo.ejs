@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajouter un Todo</title>
+</head>
+<body>
+    <h1>Ajouter un Todo</h1>
+    <form action="/todos" method="POST">
+        <label for="title">Titre:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+        <br>
+        <button type="submit">Ajouter</button>
+    </form>
+    <a href="/">Retour à l'accueil</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opération Arithmétique</title>
+    <style>
+        .error {
+            color: red;
+            background-color: #ffdddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        #resultat {
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+    <script src="tp08-operation.js"></script>
+</head>
+<body>
+    <h1>Opération Arithmétique</h1>
+    <form id="operationForm">
+        <label for="nombre1">Nombre 1:</label>
+        <input type="text" id="nombre1" name="nombre1">
+        <br>
+        <label for="nombre2">Nombre 2:</label>
+        <input type="text" id="nombre2" name="nombre2">
+        <br>
+        <label for="operateur">Opérateur:</label>
+        <select id="operateur" name="operateur">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <br>
+        <button type="button" onclick="faireOperation()">Calculer</button>
+    </form>
+    <span id="resultat"></span>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détail du Todo</title>
+</head>
+<body>
+    <h1><%= todo.title %></h1>
+    <p><%= todo.description %></p>
+    <a href="/todos/<%= todo.id %>/edit">Modifier</a>
+    <form action="/todos/<%= todo.id %>/delete" method="POST" style="display:inline;">
+        <button type="submit">Supprimer</button>
+    </form>
+    <a href="/">Retour à l'accueil</a>
+</body>
+</html>

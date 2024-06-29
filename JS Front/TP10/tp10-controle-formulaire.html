@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrôle Formulaire</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .group {
+            display: flex;
+        }
+        .identity-group{
+            width: 100%;
+            padding: 2.5rem;
+        }
+        .adresse-group{
+            width: 100%;
+            padding: 2.5rem;
+        }
+        .error {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="tp10-controle-formulaire.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Créer un utilisateur</h1>
+        <form id="userForm">
+            <div class="group">
+            <div class="identity-group">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom">
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" name="prenom">
+                </div>
+                <div class="form-group">
+                    <label for="dateNaissance">Date de naissance</label>
+                    <input type="date" class="form-control" id="dateNaissance" name="dateNaissance">
+                </div>
+                <div class="form-group">
+                    <label for="lieuNaissance">Lieu de naissance</label>
+                    <input type="text" class="form-control" id="lieuNaissance" name="lieuNaissance">
+                </div>
+                <div class="form-group">
+                    <label for="departementNaissance">Département de naissance</label>
+                    <input type="text" class="form-control" id="departementNaissance" name="departementNaissance">
+                </div>
+            </div>
+            <div class="adresse-group">
+            <div class="form-group">
+                <label for="numeroRue">Numéro de rue</label>
+                <input type="text" class="form-control" id="numeroRue" name="numeroRue">
+            </div>
+            <div class="form-group">
+                <label for="libelleRue">Libellé de rue</label>
+                <input type="text" class="form-control" id="libelleRue" name="libelleRue">
+            </div>
+            <div class="form-group">
+                <label for="codePostal">Code postal</label>
+                <input type="text" class="form-control" id="codePostal" name="codePostal">
+            </div>
+            <div class="form-group">
+                <label for="ville">Ville</label>
+                <input type="text" class="form-control" id="ville" name="ville">
+            </div>
+            <button id="validate" type="button" class="btn btn-primary" onclick="validerFormulaire()">Valider</button>
+        </div>
+        </form>
+
+        <div id="messageErreur" class="error" style="display: none;"></div>
+    </div>
+</div>
+</body>
+</html>

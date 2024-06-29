@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau des Pays</title>
+    <script src="tp09-facultatif.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body onload="chargerDonnees()">
+    <h1>Tableau des Pays Émetteurs de CO2 en 2017</h1>
+    <table id="tableau-pays">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Quantité de CO2 (milliards de tonnes)</th>
+                <th>Pourcentage mondial</th>
+            </tr>
+        </thead>
+        <tbody id="corps-tableau">
+        </tbody>
+    </table>
+</body>
+</html>

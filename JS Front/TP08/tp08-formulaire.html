@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Saisie</title>
+    <style>
+        .error {
+            color: red;
+            background-color: #ffdddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .success {
+            color: green;
+            background-color: #ddffdd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="tp08-formulaire.js"></script>
+</head>
+<body>
+    <h1>Formulaire de Saisie</h1>
+    <form id="formulaire">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom">
+        <br>
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom">
+        <br>
+        <label for="dateNaissance">Date de Naissance:</label>
+        <input type="date" id="dateNaissance" name="dateNaissance">
+        <br>
+        <button type="button" onclick="validerFormulaire()">Valider</button>
+    </form>
+    <div id="message"></div>
+</body>
+</html>

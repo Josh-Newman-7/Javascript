@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modifier le Todo</title>
+</head>
+<body>
+    <h1>Modifier le Todo</h1>
+    <form action="/todos/<%= todo.id %>" method="POST">
+        <label for="title">Titre:</label>
+        <input type="text" id="title" name="title" value="<%= todo.title %>" required>
+        <br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"><%= todo.description %></textarea>
+        <br>
+        <button type="submit">Mettre à jour</button>
+    </form>
+    <a href="/">Retour à l'accueil</a>
+</body>
+</html>

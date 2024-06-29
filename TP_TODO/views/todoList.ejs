@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Todos</title>
+</head>
+<body>
+    <h1>Liste des Todos</h1>
+    <a href="/todos/new">Créer un nouveau Todo</a>
+    <ul>
+        <% todos.forEach(todo => { %>
+            <li>
+                <a href="/todos/<%= todo.id %>"><%= todo.title %></a>
+                <form action="/todos/<%= todo.id %>/delete" method="POST" style="display:inline;">
+                    <button type="submit">Supprimer</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+    <a href="/">Retour à l'accueil</a>
+</body>
+</html>
